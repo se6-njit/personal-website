@@ -1,0 +1,120 @@
+/* DEVELOPER: Stephen Ebrahim, IS117-001, Fall 2022 */
+
+.title {
+  font-size: 42px;
+  text-align: center;
+  color: var(--bluish);
+}
+
+.right-date {
+  width: 47%;
+  color: var(--lime);
+}
+
+.left-date {
+  width: 47%;
+  text-align: end;
+  color: var(--lime);
+}
+
+.small-date {
+  display: none;
+  color: var(--lime);
+}
+
+.vertical-line {
+  position: absolute;
+  border: 1px var(--gray) solid;
+
+  height: 80%;
+  margin-top: 20px;
+  left: 50%;
+}
+
+.right-horizontal-line {
+  position: absolute;
+  border: 1px var(--gray) solid;
+
+  width: 30%;
+  right: 50%;
+}
+
+.left-horizontal-line {
+  position: absolute;
+  border: 1px var(--gray) solid;
+
+  width: 30%;
+  left: 50%;
+}
+
+.card {
+  color: var(--gray);
+  margin: 2rem;
+  height: auto;
+}
+
+.card h4 {
+  color: var(--red);
+}
+
+.card h5 {
+  color: var(--orange)
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .memoji {
+    width: 60%;
+  }
+
+  .custom-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .card {
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .right-date,
+  .left-date {
+    display: none;
+  }
+
+  .vertical-line,
+  .left-horizontal-line,
+  .right-horizontal-line {
+    left: 4%;
+  }
+
+  .small-date {
+    display: block;
+  }
+
+  .card {
+    margin: 1rem 2rem 1rem 0;
+    width: 80%;
+  }
+
+  .job {
+    justify-content: end;
+  }
+
+}
+
+

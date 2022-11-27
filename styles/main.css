@@ -1,0 +1,197 @@
+/* DEVELOPER: Stephen Ebrahim, IS117-001, Fall 2022 */
+
+:root {
+  --background-color: #282828;
+  --orange: #FE8019;
+  --yellow: #EEB42F;
+  --red: #FB4934;
+  --lime: #B8BB26;
+  --gray: #928374;
+  --bluish: #8EC07C;
+
+}
+
+/** ------------------ Classes ------------------ */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  /* padding-bottom: 5rem; */
+  /* min-width: 500px; */
+}
+
+/** Navbar */
+
+.dropdown-menu {
+  background-color: var(--background-color);
+  border: 1px rgba(100, 100, 100, 0.5) solid;
+  max-width: 20%; /* Maybe change this later */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(70, 70, 70, 0.5);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.active-page {
+  color: var(--gray) !important;
+}
+
+/** Middle Content */
+
+.custom-container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  color: white;
+  margin-right: 30px !important;
+}
+
+.custom-container .content {
+  max-width: 780px;
+}
+
+.memoji {
+  width: 40%;
+}
+
+.tags {
+  color: var(--bluish);
+}
+
+.attribute {
+  color: var(--yellow);
+}
+
+.quote {
+  color: var(--lime)
+}
+
+.name {
+  margin-left: 50px;
+  color: var(--red);
+}
+
+.brief {
+  color: var(--gray)
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  color: var(--gray);
+  gap: 25px;
+  margin: 0 30px;
+}
+
+.card {
+  background-color: rgb(25, 25, 25);
+  width: 40%;
+  max-width: 700px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+
+  margin-top: 5rem;
+  
+  /* position: absolute;
+  bottom: 1rem;
+  left: 0;
+  padding: 0 1rem; */
+}
+
+.icon {
+  width: 4rem;
+}
+
+/** ------------------ Types ------------------ */
+
+/** Navbar */
+
+html, body {
+  background-color: var(--background-color);
+  height: 100%;
+}
+
+h1 {
+  color: var(--gray)
+}
+
+a {
+  color: white !important;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: right;
+}
+
+a.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.navbar-brand:hover {
+  color: var(--gray);
+}
+
+ footer {
+  position: sticky;
+  top: 100vh;
+  height: 2rem;
+  margin: 2rem 0 1rem;
+}
+
+/** ------------------ Media Queries ------------------ */
+
+@media only screen and (max-width: 990px) {
+  .memoji {
+    width: 60%;
+  }
+
+  .custom-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .card {
+    min-width: 300px;
+    height: 450px;
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 70%;
+    min-width: 300px; 
+  }
+
+  footer > p {
+    font-size: 80%;
+  }
+}

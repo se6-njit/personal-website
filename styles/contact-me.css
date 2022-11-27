@@ -1,0 +1,103 @@
+/* DEVELOPER: Stephen Ebrahim, IS117-001, Fall 2022 */
+
+.contact-me-container {
+  color: var(--gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  color: var(--bluish);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 0 2rem;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  fill: var(--gray) !important;
+}
+
+.icon-desc {
+  margin-left: 1rem;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.icon-and-desc {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.icon-group {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.icon-group .icon {
+  margin: 0 1rem;
+}
+
+.btn-outline-secondary {
+  color: white !important;
+  border: 1px var(--gray) solid !important;
+}
+
+.btn-outline-secondary:hover {
+  color: white !important;
+  background-color: var(--gray) !important;
+  border: 1px var(--gray) solid !important;
+}
+
+::placeholder {
+  color: var(--gray) !important;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+input, textarea {
+  background-color: var(--background-color) !important;
+  color: var(--gray) !important;
+  border: 1px var(--gray) solid !important;
+}
+
+label {
+  color: var(--bluish);
+}
+
+form {
+  margin: 2rem 2rem 2rem 0;
+  min-width: 450px;
+  width: 50%;
+  background-color: rgb(25, 25, 25) !important;
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+form > .form-group {
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-me-container {
+    flex-direction: column;
+  }
+
+  form {
+    width: 90%;
+    margin: 1rem;
+  }
+}

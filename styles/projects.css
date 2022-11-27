@@ -1,0 +1,83 @@
+/* DEVELOPER: Stephen Ebrahim, IS117-001, Fall 2022 */
+
+.title {
+  margin-left: 3rem;
+  color: var(--bluish);
+}
+
+.lead {
+  color: var(--gray);
+  margin: 0 3rem;
+}
+
+.card {
+  color: var(--gray);
+  margin: 2rem;
+}
+
+.card-title {
+  color: var(--red);
+} 
+
+.flex-grow {
+  height: fit-content;
+  flex: 1 0 0;
+}
+
+.card-body .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  /* background-color: var(--gray); */
+  padding: 0;
+}
+
+.card-body img {
+  width: 58px;
+  margin: auto auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pill {
+  background-color: var(--bluish);
+  font-size: 16px;
+  margin: 0.2em;
+  color: var(--background-color);
+}
+
+@media only screen and (max-width: 990px) {
+  .card {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .card {
+    height: inherit;
+    width: 90%;
+  }
+  
+  .custom-pill {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .card-body img {
+    width: 48px;
+  }
+}
+
